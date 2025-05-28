@@ -1,0 +1,879 @@
+*{
+    margin: 0 ;
+    box-sizing: border-box;
+    /* padding: 0; */
+  
+
+font-family: 'Courier New', Courier, monospace;
+    
+}
+body{
+ overflow-x: hidden;
+    background-color: rgb(0, 0, 0);
+    
+}
+/* header section here */
+
+.header{
+    background-color: rgb(0, 0, 0);
+    height: 40px;
+    width: 100%;
+    /* border: 2px solid rgb(255, 255, 255); */
+    border-radius: 8px;
+    padding: 12px;
+    background-color: rgb(0, 0, 0);
+}
+.icon{
+    color: white;
+    float: right;
+    padding: 0px 17px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* nav section here   */
+
+#navbar{
+    position: relative;
+    background-color: black;
+   /* background: url(https://arthurmurraydanceclasses.com/wp-content/uploads/2019/07/about-banner.jpg)no-repeat center center/cover; */
+    height: 70px;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 8px;
+    padding: 12px;
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+li{
+    list-style: none;
+    padding: 10px 32px;
+    position: relative;
+    left: -30px;
+}
+#navbar ul a{
+    text-decoration: none;
+    color: beige;
+    font-size: 1.6rem;
+   transition: 0.2s ease-in-out;
+    
+}
+#navbar ul a:hover{
+  border: 0.1px solid wheat;
+  border-radius: 10px;
+    color: bisque;
+   box-shadow: 0px 0px 5px beige;
+   font-size: 1.7rem;
+
+ 
+   
+}
+#introsection{
+    position: relative;
+   
+    width: 100%;
+    display: flex;
+    height: 2900px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    /* background:  url(https://wallpapers.com/images/hd/dance-pictures-ne2xtvwo0wjosl26.jpg)no-repeat center center/cover; */
+    color: beige;
+    text-align: center;
+    align-items: center;
+    justify-content:center;
+    font-size: 2rem;
+    flex-direction: column;
+    font-size: bold;
+    /* text-decoration: underline; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+#introsection{
+    animation: fadeOut 2s forwards;
+    animation-timeline: scroll();
+}
+
+.small{
+
+    top: 50px;
+    left: -200px;
+    
+    position: absolute;
+    
+
+    transition: 1s ease-in-out;
+
+
+}
+.small img{
+    
+        height: 200px;
+  
+
+}
+
+.pose{
+    position: absolute;
+    top: 50px;
+    transition: 1s ease-in-out;
+
+    right: -200px;
+}
+.pose img{
+    height: 200px;
+ 
+    
+    
+}
+div.big{
+    top: -303px;
+    position: absolute;
+    font-size: 3.0rem;
+    color: beige;
+    text-decoration: underline;
+    overflow: auto;
+    transition: 1s ease-in-out ;
+}
+.images{
+    display: flex;
+    flex-direction: row;
+}
+.image{
+    position: relative;
+    left: 200px;
+    top: 65px;
+    width: 14%;
+    height: 350px;
+    margin: 0px 7px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 6px beige ;
+    transition: all ease-in-out 0.3s;
+    transform: skew(3deg);
+}
+.image:hover{
+    position: relative;
+   transform: matrix(59px);
+   /* transform: skew(-4deg); */
+ 
+    top: -10px;
+    width: 17%;
+    height: 390px;
+    background: wheat;
+    /* cursor: pointer; */
+   /* overflow-x: none; */
+  
+
+
+}
+.text{
+    position: relative;
+    top: 35px;
+    left: 445px;
+    color: beige;
+    text-decoration: underline;
+}
+.slid{
+    position: relative;
+    top: 100px;
+    height: 730px;
+    width: 90%;
+    border: 2px solid beige;
+    border-radius: 20px;
+   
+}
+
+/* slider code here */
+
+.slider{
+    top: 100px;
+    bottom: 200px;
+    width: 70%;
+    height: 500px;
+    box-shadow: 0px 0px 10px beige;
+    position: relative;
+    margin:  auto;
+    overflow: hidden;
+
+    
+    
+    border: 2px solid beige;
+    border-radius: 20px;
+    transition:  0.2s ease-in-out;
+    
+}
+.slider:hover{
+    height: 515px;
+    box-shadow: 0px 0px 10px rgb(255, 255, 4);
+    width: 70.5%;
+
+}
+
+.slide{
+    width: 100%;
+    /* height: 900px; */
+    transition: 1s ease-in-out;
+    height: 100%;
+    position: absolute;
+
+   
+   
+}
+
+.btnnn{
+position: absolute; 
+
+
+left: 750px;
+    width: 100px;
+   margin: 348px auto;
+}
+.btnnn button{
+   font-size: 7rem;
+
+}
+.left{
+   
+    top: -160px;
+    left: -765px;
+    position: relative;
+    background: none;
+    border: none;
+    text-shadow: 0px 2px 5px rgb(255, 255, 255);
+  
+
+
+}
+.right{
+   
+    right: -120px;
+    top: -294px;
+    /* left: 709px; */
+    position: relative;
+    background: none;
+    border: none;
+    text-shadow: 0px 2px 5px rgb(255, 255, 255);
+  
+   
+
+}
+
+
+
+.dance{
+  
+    position: relative;
+    top: 150px;
+    height: 800px;
+    width: 100%;
+}
+.video{
+    height: 600px;
+   border-radius: 20px;
+   box-shadow: 0px 0px 10px beige;
+
+}
+.cont{
+   overflow-wrap: normal;
+    
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 50px;
+    height: 650px;
+   width: 90%;
+   box-shadow: 0px 0px 10px beige;
+  
+   border-radius: 20px;
+   text-shadow: 0px 0px 2px beige;
+   
+   
+}
+.boxmonth{
+    font-size: 30px;
+    position: relative;
+    left: 30px;
+    top: 170px;
+    height: 450px;
+    width: 470px;
+    box-shadow: 0px 0px 10px beige;
+    border-radius: 20px;
+    padding: 30px;
+}
+.btnmonth{
+    height: 50px;
+    box-shadow: 0px 0px 5px beige;
+    cursor: pointer;
+    border:beige; 
+    text-justify: distribute-all-lines;
+    
+    
+}
+
+.btnmonth{
+    border-radius: 7px;
+
+}
+#mon{
+    position: relative;
+    left: -20px;
+    font-size: 5rem;
+}
+#mo{
+    position: relative;
+    left: 100px;
+    top: -45px;
+    font-size: 1rem;
+
+}
+.hh{
+    width: 250px;
+    height: 300px;
+    position: relative;
+    left: 100px;
+    top: 130px;
+    box-shadow: 0px 0px 10px beige;
+  
+    border-radius: 20px;
+ 
+   
+
+}
+.hh h1{
+    font-size: 4.5rem;
+}
+.boxyear{
+    position: relative;
+    top: 40px;
+    left: 165px;
+    width: 450px;
+    height: 500px;
+    box-shadow: 0px 0px 10px beige;
+    border-radius: 20px;
+    padding: 30px;
+}
+#yo {
+    position: relative;
+    left: -20px;
+    font-size: 5rem;
+}
+#yoo {
+    position: relative;
+    left: 130px;
+    top: -45px;
+    font-size: 1.1rem;
+}
+.btnvid{
+  height: 30px;
+  width: 100px;
+  border-radius: 6px;
+    color: beige;
+    background-color: rgb(4, 4, 255);
+    /* font-size: 1.2rem; */
+    box-shadow: 0px 0px 5px beige;
+    cursor: pointer;
+    border:beige; ;
+    
+}
+
+
+
+
+
+#sponsorssection{
+    position: relative;
+width: 100%;
+    height: 650px;
+    /* background-color: grey; */
+    border: 2px solid rgb(255, 255, 255);
+   
+    text-align: center;
+    color: beige;
+    font-size: 22px;
+    background-color: black;
+    /* background: url(https://pointemagazine.com/wp-content/uploads/2021/04/a-day-in-the-life-of-a-dance-major-kiahna-saneshig-3.jpg) no-repeat center center/cover; */
+
+}
+
+div.sponimg img{
+    
+    height: 100px;
+    margin: 80px 30px;
+border-radius: 10px;
+visibility: visible;
+opacity: 0.9;
+border: 2px solid beige;
+
+}
+
+#sponsorssection div.spon{
+    font-size: 2rem;
+   
+}
+.text h1{
+    position: relative;
+    left: -450px;
+    color: beige;
+   font-size: 3rem;
+
+}
+.spon p{
+    /* height: 400px;
+    width: 350px; */
+    position: relative;
+    top: 180px;
+    left: 50px;
+   
+font-size: 28px;
+float: left;
+/* overflow: auto; */
+}
+
+#logo{
+    /* color: beige; */
+    height: 125px;
+    /* width: 50px; */
+
+}
+
+
+
+
+
+
+
+
+.level h1{
+    position: relative;
+    top: 35px;
+    left: -200px;
+    font-size: 3rem;
+    
+}
+
+.level p{
+    position: relative;
+    top: 75px;
+    left: -230px;
+    font-size: 2rem;
+}
+
+.boxofspon{
+    position: relative;
+    top: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.boxs{
+  text-overflow: inherit;
+    margin: 100px 30px;
+    height: 250px;
+    width: 350px;
+    border: 2px solid beige;
+    border-radius: 20px;
+    background-color: #000000;
+}
+.boxes video{
+    
+      border-radius: 100px;
+      box-shadow: 0px 0px 10px beige;
+     
+  }
+  .nu{
+    width: 306px;
+    height: 178px;
+  
+  }
+.boxs h1{
+    margin: 8px ;
+    background-color: rgb(199, 199, 191);
+  border-radius: 10px;
+  color: white;
+
+}
+.boxs p{
+    margin: 18px ;
+
+}
+
+.section{
+    position: relative;
+    top: 0px;
+    height: 1100px;
+    width: 100%;
+    border: 2px solid white;
+}
+.section h1{
+    position: relative;
+    color: beige ;
+    top: 20px;
+    left: 10px;
+    font-size: 3rem;
+}
+.boxes{
+    display: grid;
+    
+    grid-template-columns: 80px 80px 80px 80px;
+   
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+
+}
+.box{
+position: relative;
+top: 70px;
+left: 20px;
+
+    width: 200px;
+    height: 200px;
+ 
+    margin: 60px 10px;
+   
+    
+}
+
+
+.box img{
+    border-radius: 20px;
+    
+    box-shadow: 0px 0px 10px beige;
+    transition:  0.2s ease-in-out;
+
+}
+.box img:hover{
+    height: 220px;
+    width: 280px;
+
+}
+
+
+
+
+.form{
+    position: relative;
+   
+    height: 653px;
+   
+    align-items: center;
+    /* background: url(https://fabric.dance/wp-content/uploads/2021/10/awoverflow2019jp_17675-1920x600.jpg ) no-repeat center center/cover ; */
+    background: url(contact.jpg) no-repeat center center/cover ;
+    color: beige;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+    
+    
+    
+}
+
+div.form input{
+    position: relative;
+    margin: 15px;
+    height: 30px;
+    border-radius: 10px;
+    width: 50%;
+    left: 203px;
+    font-size: 1.1rem;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+   
+    }
+    textarea{
+        position: relative;
+        margin: 15px;
+        height: 50px;
+        border-radius: 10px;
+        width: 50%;
+        left: 203px;
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+
+    }
+    .form button{
+        position: relative;
+        top: 41px;
+    left: -96px;
+    margin: 15px;
+   height: 30px;
+   width: 80px;
+   border: 2px solid black;
+   border-radius: 10px;
+   background-color: rgb(255, 255, 255);
+   
+   
+}
+.form h2{
+    color: rgb(255, 255, 255);
+}
+
+ #dan {
+    position: relative;
+    left: -210px;
+    top: -55px;
+    height: 150px; 
+    width: 180px;
+} 
+/* footer code here */
+
+#footer{
+    position: relative;
+    top: 0px;
+
+    
+    height: 330px;
+    background-color: black;
+    text-align: center;
+    color:rgb(197, 197, 197);
+    border: 2px solid beige;
+    
+   
+
+}
+#navvbar{
+    position: relative;
+    top: -150px;
+    left: 450px;
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+    height: 400px;
+}
+#navvbar ul a{
+    text-align: left;
+    text-decoration: none;
+    color: beige;
+    font-size: 1.6rem;
+   transition: 0.2s ease-in-out;
+   
+    
+}
+#navvbar ul li{
+    padding: 14px;
+}
+#footdan{
+    position: relative;   position: relative;
+    left: -310px;
+    top: 205px;
+    height: 150px; 
+    width: 180px;
+}
+
+.inside{
+    position: inherit;
+    top: 0px;
+    height: 3000px;
+    width: 100%;
+    border: 2px solid white;
+}
+.inside h1{
+    width: 300px;
+    position: relative;
+    top: 20px;
+    color: beige;
+    font-size: 2.3rem;
+    left: 650px;
+}
+.inside h2{
+    
+    position: relative;
+    left: 60px;
+
+    top: 20px;
+    color: beige;
+font-size: 5.4rem;
+}
+.boxi1{
+    display: flex;
+    flex-direction: row;
+}
+.boxi2{
+    display: flex;
+    flex-direction: row;
+}
+.boxi3{
+    display: flex;
+    flex-direction: row;
+}
+.imggg img{
+    position: relative;
+    top: 50px;
+    left: 150px;
+    height: 720px;
+    width: 600px;
+  /* padding: 100px; */
+  box-shadow: 0px 0px 6px beige;
+  border-radius: 200px;
+margin: 80px 20px;
+
+}
+.imgi2{
+    position: relative;
+    top: 100px;
+    left: 680px;
+}
+.parap{
+    position: relative;
+    top: 200px;
+    left: 270px;
+    /* border: 2px solid beige; */
+    height: 600px;
+    width: 500px;
+    color: beige;
+    font-size: 2rem;
+   overflow-y: scroll;
+   padding: 30px 30px;
+   transform: skew(-5deg);
+}
+.parai2{
+    position: relative;
+    top: 330px;
+    left: -470px;
+    color: beige;
+    font-size: 2rem;
+   overflow-y: scroll;
+
+}
+
+/* popup code here */
+
+
+
+
+.close-button {
+    position: relative;
+    top: -70px;
+    left: 200px;
+    color: #ffffff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+.container22 {
+    /* background: url(https://fabric.dance/wp-content/uploads/2021/10/awoverflow2019jp_17675-1920x600.jpg) no-repeat center center/cover; */
+  
+
+    display: none;
+    position: fixed;
+   
+    top: 200px;
+    left: 550px;
+    width: 450px;
+    height: 400px;
+    border-radius: 20px;
+    /* perspective: 1000px; */
+    box-shadow: 0px 0px 6px beige;
+  
+}
+
+.form-container {
+    position: relative;
+   
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.form1 {
+    
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+    border-radius: 10px;
+    /* box-shadow: 0 0 10px rgba(0,0,0,0.2); */
+}
+
+.signup-form {
+    transform: rotateY(180deg);
+}
+
+.form1 h2 {
+  position: relative;
+  top: -100px;
+    color: beige;
+    font-size: 2rem;
+}
+
+div.form1 input {
+    position: relative;
+    top: -60px;
+    left: 65px;
+
+    margin: 10px 0;
+    padding: 10px;
+    width: 70%;
+    border: 1px solid beige;
+    border-radius: 5px;
+   background-color: beige;
+}
+
+.form1 button {
+    position: relative;
+    top: -1px;
+    left: -130px;
+    padding: 10px 20px;
+    border: none;
+    background: #00356d;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+
+
+/* .form1 :hover {
+    background: #b1b8bf;
+} */
+
+.form1 p {
+    position: relative;
+    left: 68px;
+   font-size: 19px;
+    margin-top: 10px ;
+    color: beige;
+}
+
+.signup-form{
+    position: relative;
+    top: 20px;
+}
+
+.signup-form a {
+    color: #0300aa;
+    text-decoration: none;
+  
+}
+
+.signup-form a:hover {
+    text-decoration: underline;
+}
+
+.show-signup .form-container {
+    transform: rotateY(180deg);
+}
