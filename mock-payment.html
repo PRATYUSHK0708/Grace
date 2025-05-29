@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Grace Dance Academy - Mock Payment</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: rgb(255, 255, 255);
+      background: url(static/service3.png);
+    
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 60px auto;
+      background: rgb(203, 205, 190);
+      padding: 45px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .step {
+      display: none;
+    }
+    
+    .step.active {
+        
+      display: block;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      width: 100%;
+      padding: 14px;
+      margin-top: 20px;
+      background-color: #1976d2;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #1565c0;
+    }
+
+    .payment-options {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .success {
+      text-align: center;
+      color: green;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    .payment-summary {
+      margin-top: 10px;
+      background: #f8f8f8;
+      padding: 15px;
+      border-radius: 8px;
+    }
+ .next-btn {
+    position: relative;
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #4caf50;
+  left: 250px;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.next-btn:hover {
+  background-color: #388e3c;
+}
+
+
+
+  </style>
+</head>
+<body>
+ 
+  <div class="container">
+    <h2>Grace Dance Academy - Payment</h2>
+
+    <!-- Step 1: User Info -->
+    <div class="step active" id="step1">
+      <input type="text" id="name" placeholder="Full Name" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="tel" id="phone" placeholder="Phone Number" required />
+      <input type="text" id="address" placeholder="Address" required />
+      <button onclick="goToStep(2)">Next</button>
+    </div>
+
+    <!-- Step 2: Payment Options -->
+    <div class="step" id="step2">
+      <div class="payment-options">
+        <button onclick="selectPayment('UPI')">Pay with UPI</button>
+        <button onclick="selectPayment('Card')">Pay with Card</button>
+        <button onclick="selectPayment('PayPal')">Pay with PayPal</button>
+      </div>
+      <button onclick="goToStep(1)">Back</button>
+    </div>
+
+    <!-- Step 3: Confirmation -->
+    <div class="step" id="step3">
+      <div class="payment-summary">
+        <p><strong>Name:</strong> <span id="confirmName"></span></p>
+        <p><strong>Payment Method:</strong> <span id="confirmMethod"></span></p>
+        <p><strong>Amount:</strong> ₹500</p>
+      </div>
+      <button onclick="simulatePayment()">Pay ₹500</button>
+      <button onclick="goToStep(2)">Back</button>
+    </div>
+
+    <!-- Success -->
+    <div class="step" id="step4">
+      <div class="success">
+        ✅ Payment Successful!<br />
+        <br>
+        Payment ID: <span id="paymentId"></span>
+    </div>
+    <a href="/thank-you.html" class="next-btn">Next →</a>
+    </div>
+  </div>
+
+  <script>
+    let selectedMethod = '';
+    function goToStep(step) {
+      document.querySelectorAll('.step').forEach(el => el.classList.remove('active'));
+      document.getElementById('step' + step).classList.add('active');
+    }
+
+    function selectPayment(method) {
+      selectedMethod = method;
+      const name = document.getElementById('name').value;
+      document.getElementById('confirmName').innerText = name;
+      document.getElementById('confirmMethod').innerText = method;
+      goToStep(3);
+    }
+
+    function simulatePayment() {
+      const mockId = 'PAY' + Math.floor(Math.random() * 1000000000);
+      document.getElementById('paymentId').innerText = mockId;
+      goToStep(4);
+    }
+
+  
+  </script>
+</body>
+</html>
