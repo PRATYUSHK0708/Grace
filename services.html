@@ -7,6 +7,542 @@
     <link rel="stylesheet" href="static/services.css"> 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+   
+
+font-family: 'Courier New', Courier, monospace;
+    
+}
+body{
+    background-color: black;
+}
+
+.header{
+    background-color: rgb(0, 0, 0);
+    height: 40px;
+    width: 100%;
+    /* border: 2px solid rgb(255, 255, 255); */
+    border-radius: 8px;
+    padding: 12px;
+    background-color: rgb(0, 0, 0);
+}
+.icon{
+    color: white;
+    float: right;
+    padding: 0px 17px;
+    cursor: pointer;
+    font-size: 16px;
+}
+#navbar{
+   /* background: url(https://arthurmurraydanceclasses.com/wp-content/uploads/2019/07/about-banner.jpg)no-repeat center center/cover; */
+   background-color: black;
+    height: 70px;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 8px;
+    padding: 12px;
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+li{
+    list-style: none;
+    padding: 10px 32px;
+}
+#navbar ul a{
+    text-decoration: none;
+    color: beige;
+    font-size: 1.6rem;
+    transition: 0.2s ease-in-out;
+}
+#navbar ul a:hover{
+    border: 0.1px solid wheat;
+    border-radius: 10px;
+      color: bisque;
+     box-shadow: 0px 0px 5px beige;
+     font-size: 1.7rem;
+  
+   
+     
+  }
+  
+
+#dan {
+    position: relative;
+    left: -210px;
+    top: -55px;
+    height: 150px; 
+    width: 180px;
+}  
+.main-cont{
+    position: relative;
+    top: 0px;
+    height: 1600px;
+    width: 100%;
+   
+    border: 2px solid white;
+}
+#h1spec{
+    padding: -1px;
+   
+    position: fixed;
+    top: 200px;
+  left: 500px;
+    height: 400px;
+    width: 500px;
+    color: beige;
+    font-size: 3.2rem;
+
+}
+
+.container{
+    position: relative;
+    height: 3000px;
+    /* perspective: 1500px; */
+}
+.cont {
+    position: relative;
+    height: 100vh;
+    /* perspective: 1500px; */
+}
+
+.dance-component {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateX(10deg);
+    text-align: center;
+}
+
+.dance-component h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: beige;
+}
+
+.dance-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.dance-image {
+    width: 1200px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0.8;
+}
+
+/* .dance-image:hover {
+    transform: scale(1.1) rotate(5deg);
+    opacity: 1;
+} */
+
+
+.text-section h2 {
+    margin: 0;
+    font-size: 2em;
+    color: white;
+}
+
+.text-section p {
+    margin: 10px
+}
+
+.sec1{
+   
+    overflow-x: hidden;
+    position: relative;
+    height: 800px;
+    width: 100%;
+    background: url("/static/sec1img.jpg")center center/cover;
+    border: 2px solid white;
+
+  /* border: 2px solid white; */
+}
+
+.nu{
+    position: fixed;
+  
+
+    bottom: 20px;
+   
+    left: 600px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+}
+/* #h-text1{
+    margin: 0;
+    font-size: 2em;
+
+} */
+#h-text2{
+    position: relative;
+    top: 80px;
+    left: 30px;
+    margin: 0;
+    font-size: 7em;
+    color: black;
+    
+   
+}
+#h-text3 {
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 120px;
+    padding: auto;
+    left: 30px;
+    margin: 0;
+    width: 400px;
+    height: 500px;
+    font-size: 1.4em;
+
+}
+.sec1-btn{
+    position:relative;
+  height: 50px;
+  width: 130px;
+
+   top: 10px;
+   
+    left: 40px;
+    background: rgba(70, 70, 70, 0.5);
+    padding: 5px;
+    border-radius: 13px;
+    box-shadow: 0 0 30px 0.2px;
+
+}
+/* .sec3{
+    animation: fadeOut 20s both;
+    animation-timeline: scroll();
+}
+
+@keyframes fadeOut{
+    from{opacity: +2;}
+    to{opacity: -0;}
+} */
+.sec2{
+    /* overflow-x: hidden; */
+    position: relative;
+    height: 800px;
+    width: 100%;
+   
+
+ 
+}
+.box{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+.boxes{
+    height: 800px;
+    width: 509px;
+    border: 2px solid white;
+}
+.box1{
+   
+    
+}
+.box1 h1{
+    position: relative;
+    top: 120px;
+    left: 40px;
+    width: 380px;
+   font-size: 9rem;
+   font-family: 'Courier New', Courier, monospace;
+   color: rgb(222, 222, 222);
+   
+    
+}
+.box1 p{
+    position: relative;
+    top: 160px;
+    left: 40px;
+    width: 380px;
+   font-size: 2rem;
+   font-family: 'Courier New', Courier, monospace;
+   color: rgb(255, 255, 255);
+   
+    
+}
+
+.sec2-learnmore{
+    position:relative;
+    height: 50px;
+    width: 100px;
+  
+     top: 200px;
+     
+      left: 40px;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 5px;
+      border-radius: 13px;
+     text-shadow: 0 0 30px 0.3;
+      cursor: pointer;
+      color: white;
+
+}
+.box2{
+    background: url("https://images.pexels.com/photos/15290592/pexels-photo-15290592/free-photo-of-a-newlywed-couple-outside-a-prada-store.jpeg?auto=compress&cs=tinysrgb&w=600")center center/cover;
+    
+
+
+}
+.box3{
+    background: url("https://images.pexels.com/photos/17718751/pexels-photo-17718751/free-photo-of-a-black-and-white-photo-of-a-girl-dancing.jpeg?auto=compress&cs=tinysrgb&w=600")center center/cover;
+
+}
+.sec3{
+    /* overflow-x: hidden; */
+    position: relative;
+    height: 800px;
+    width: 100%;
+   
+    background: url("/static/sec3img.jpg")center center/cover;
+    border: 2px solid white;
+}
+.sec3 h1{
+    position: relative;
+    top: 20px;
+    left: 1000px;
+    width: 380px;
+   font-size: 4rem;
+   font-family: 'Courier New', Courier, monospace;
+   color: rgb(109, 0, 6);
+ 
+   
+    
+}
+.sec3 p{
+    position: relative;
+    top: 30px;
+    left: 1000px;
+    width: 380px;
+   font-size: 2rem;
+   font-family: 'Courier New', Courier, monospace;
+   color: rgb(255, 255, 255);
+   
+   
+    
+}
+.sec3-btn{
+    position:relative;
+  height: 50px;
+  width: 150px;
+  cursor: pointer;
+
+   top: 80px;
+   
+    left: 1000px;
+    background:transparent;
+    color: rgb(255, 0, 0);
+    padding: 5px;
+    border-radius: 13px;
+    box-shadow: 0 0 10px 0.2px;
+ 
+
+}
+.sec4{
+    /* overflow-x: hidden; */
+    position: relative;
+    height: 800px;
+    width: 100%;
+   
+    background: url("/static/sec4img.jpg")center center/cover;
+    border: 2px solid white;
+}
+.sec4 h1{
+    position: relative;
+    top: 20px;
+    left: 30px;
+    width: 380px;
+   font-size: 8rem;
+   font-family: 'Courier New', Courier, monospace;
+   color: rgb(255, 255, 255);
+ 
+    
+}
+.sec4 p{
+    position: relative;
+    top: 90px;
+    left: 1030px;
+    width: 380px;
+   font-size: 1.4rem;
+   font-family: 'Courier New', Courier, monospace;
+   color: rgb(255, 255, 255);
+ 
+    
+}
+.sec4-btn{
+    position:relative;
+  height: 50px;
+  width: 150px;
+
+   top: 80px;
+   
+    left: 100px;
+    background:transparent;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 13px;
+    box-shadow: 0 0 10px 0.2px;
+ 
+
+}
+.faculties{
+    position: relative;
+    /* left: 200px; */
+    height: 800px;
+    display: flex;
+}
+
+.sidebar {
+    position: relative;
+ 
+    height: 800px;
+    width: 20%;
+    background-color: #ffffff;
+    padding: 20px;
+    color: black;
+
+    box-shadow: 0 0 40px 0.3px;
+   
+ }
+ 
+ .main {
+    width: 80%;
+    /* background-color: #ffffff; */
+    /* background: url(https://fabric.dance/wp-content/uploads/2021/10/awoverflow2019jp_17675-1920x600.jpg) no-repeat center center/cover; */
+    background-color: #ffffff;
+    padding: 20px;
+ }
+ 
+ .faculty {
+    font-size: 4rem;
+    margin-bottom: 20px;
+ }
+ 
+ .bio {
+    font-size: 2.7rem;
+    margin-bottom: 20px;
+ }
+/*  
+ .view-all {
+    background-color:#3b0909;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+ } */
+ 
+ .boxesss {
+    display: flex;
+    overflow-x: auto;
+   
+ }
+ 
+ .boxs{
+    flex: 0 0 auto;
+    width: 300px;
+    height: 800px;
+    background-color: #000;
+    color: beige;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  text-align: start;
+  padding: 20px;
+ text-align: center;
+    /* box-shadow: 0 0 40px 0.2px wheat; */
+    border-radius: 10px;
+ }
+ 
+ .boxs img {
+    width: 100%;
+    height: 250px;
+    /* background-color: #222; */
+    border-radius: 10px;
+ }
+ .names{
+    position: relative;
+    
+    /* top: -30px; */
+    left: -20px;
+   font-size: 2rem;
+   text-decoration: underline;
+ }
+ .parap{
+    position: relative;
+    top: -20px;
+    /* left: -20px; */
+   font-size: 1.6rem;
+ margin-left: 10px;
+ text-align: center;
+ } 
+/* footer code here */
+
+
+#footer{
+    position: relative;
+    top: 0px;
+
+    
+    height: 330px;
+    background-color: black;
+    text-align: center;
+    color:beige;
+    border: 2px solid beige;
+    
+   
+
+}
+#navvbar{
+    position: relative;
+    top: -150px;
+    left: 450px;
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+    height: 400px;
+}
+#navvbar ul a{
+    text-align: left;
+    text-decoration: none;
+    color: beige;
+    font-size: 1.6rem;
+   transition: 0.2s ease-in-out;
+   
+    
+}
+#navvbar ul li{
+    padding: 14px;
+}
+#footdan{
+    position: relative;   position: relative;
+    left: -310px;
+    top: 205px;
+    height: 150px; 
+    width: 180px;
+}
+
+
+    </style>
 </head>
 <body>
     <header class="header">
@@ -23,11 +559,11 @@
     <nav id="navbar">
         <ul>
             <img src="static/dan.png" alt="" id="dan">
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About us</a></li>
-            <li><a href="/services">services</a></li>
-            <li><a href="/contact">contact Us </a></li>
-            <li><a href="/login">login</a></li>
+             <li><a href="/index.html">Home</a></li>
+            <li><a href="/about.html">About us</a></li>
+            <li><a href="/services.html">Services</a></li>
+            <li><a href="/contact.html">Contact Us </a></li>
+            <li><a href="/login.html">Login</a></li>
 
         </ul>
     </nav>

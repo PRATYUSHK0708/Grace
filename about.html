@@ -4,10 +4,283 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grace Dance Academy</title>
-    <link rel="stylesheet" href="static/about.css"> 
+    <link rel="stylesheet" href=""> 
     <!-- <link rel="" href="home.html">  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+<style>
+    *{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+
+font-family: 'Courier New', Courier, monospace;
+    
+}
+body{
+
+    background-color: black;
+}
+
+.header{
+    background-color: rgb(0, 0, 0);
+    height: 40px;
+    width: 100%;
+    /* border: 2px solid rgb(255, 255, 255); */
+    border-radius: 8px;
+    padding: 12px;
+    background-color: rgb(0, 0, 0);
+}
+.icon{
+    color: white;
+    float: right;
+    padding: 0px 17px;
+    cursor: pointer;
+    font-size: 16px;
+}
+ #navbar{
+    /* 
+   background: url(https://arthurmurraydanceclasses.com/wp-content/uploads/2019/07/about-banner.jpg)no-repeat center center/cover; */
+    height: 70px;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 8px;
+    padding: 12px;
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+li{
+    position: relative;
+    left: -35px;
+    list-style: none;
+    padding: 10px 32px;
+}
+#navbar ul a{
+    text-decoration: none;
+    color: beige;
+    font-size: 1.6rem;
+    transition: 0,2s ease-in-out;
+   
+
+}
+#navbar ul a:hover{
+    border: 0.1px solid wheat;
+    border-radius: 10px;
+      color: bisque;
+     box-shadow: 0px 0px 5px beige;
+     font-size: 1.7rem;
+  
+   
+     
+  }
+#introsection{
+    
+    opacity: 0.9;
+    width: 100%;
+    display: flex;
+    height: 600px;
+    border: 2px solid rgb(255, 255, 255);
+    /* background:  url(https://wallpapers.com/images/hd/dance-pictures-ne2xtvwo0wjosl26.jpg)no-repeat center center/cover; */
+   
+    color: beige;
+    text-align: center;
+    align-items: center;
+    justify-content:center;
+    font-size: 2rem;
+    flex-direction: column;
+    font-size: bold;
+    
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow-y: hidden;
+}
+
+div.big{
+  
+    text-decoration: underline;
+    position: relative;
+    top: -35px;
+    left: -4096px;
+    font-size: 2.3rem;
+
+}
+.para{
+    overflow-y: scroll;
+    position: absolute;
+    top: -530px;
+    height: 460px;
+    width: 50%;
+    left: 70px;
+  padding: 20px 50px;
+    border: 3px solid beige;
+    border-radius: 20px;
+    font-size: 20px;
+    box-shadow: 0px 0px 4px beige;
+    transition: 1s ease-in-out;
+}
+.pose3{
+    position: absolute;
+ 
+    transition: 0.9s ease-in-out;
+    
+}
+.pose3 img{
+   
+    position: relative;
+    top: 700px;
+    height: 600px;
+    right: -450px;
+}
+
+#footer{
+    
+    
+    height: 30px;
+    background-color: black;
+    text-align: center;
+    color:beige;
+
+}
+#dan {
+    position: relative;
+    left: -210px;
+    top: -55px;
+    height: 150px; 
+    width: 180px;
+} 
+
+.section{
+    /* overflow-wrap: anywhere; */
+    position: relative;
+    top: 0px;
+    height: 1100px;
+    width: 100%;
+    border: 2px solid white;
+    box-sizing: border-box;
+    overflow-y: hidden;
+    overflow-wrap: initial;
+}
+.section h1{
+    position: relative;
+    color: beige ;
+    top: 20px;
+    left: 10px;
+    font-size: 3rem;
+}
+.boxes{
+    display: grid;
+   
+    grid-template-columns: 80px 80px 80px 80px;
+   
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr; 
+    
+    /* grid-template-columns: 80px 80px;
+   
+    grid-template-columns: 1fr 0.5fr ; */
+
+}
+
+
+.box{
+position: relative;
+top: 70px;
+left: 50px;
+
+    width: 200px;
+    height: 200px;
+ 
+    margin: 60px 10px;
+ 
+   
+    
+}
+.h{
+    position: relative;
+    top: 20px;
+    left: 90px;
+    color: beige;
+    font-size: 1rem;
+}
+
+
+.box img{
+    border-radius: 20px;
+    
+    box-shadow: 0px 0px 10px beige;
+    transition:  0.2s ease-in-out;
+
+}
+.box img:hover{
+    height: 220px;
+    width: 280px;
+
+}
+
+
+#dan {
+    position: relative;
+    left: -210px;
+    top: -55px;
+    height: 150px; 
+    width: 180px;
+} 
+.still{
+    position:fixed;
+}
+.still
+
+
+#footer{
+    position: relative;
+    top: 0px;
+
+    
+    height: 330px;
+    background-color: black;
+    text-align: center;
+    color:beige;
+    border: 2px solid beige;
+    
+   
+
+}
+#navvbar{
+    position: relative;
+    top: -150px;
+    left: 450px;
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+    height: 400px;
+}
+#navvbar ul a{
+    text-align: left;
+    text-decoration: none;
+    color: beige;
+    font-size: 1.6rem;
+   transition: 0.2s ease-in-out;
+   
+    
+}
+#navvbar ul li{
+    padding: 14px;
+}
+#footdan{
+    position: relative;   position: relative;
+    left: -310px;
+    top: 205px;
+    height: 150px; 
+    width: 180px;
+}
+
+
+
+ 
+</style>
 <body>
     <header class="header">
        
