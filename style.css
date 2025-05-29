@@ -561,8 +561,9 @@ left: 20px;
     height: 653px;
    
     align-items: center;
-    /* background: url(https://fabric.dance/wp-content/uploads/2021/10/awoverflow2019jp_17675-1920x600.jpg ) no-repeat center center/cover ; */
-    background: url(contact.jpg) no-repeat center center/cover ;
+    background: url("https://wallpaper.dog/large/5480346.jpg" ) no-repeat center center/cover ;
+/*     background: url(contact.jpg) no-repeat center center/cover ; */
+    
     color: beige;
     font-size: 2rem;
     display: flex;
